@@ -18,6 +18,16 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
+"@types/chai@^4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.2.2.tgz#6b825013863d04868c15624ec8b7fdced88a47c6"
+  integrity sha512-8V2aCcPM3WLuJvJpF6N60uUvdZb7NHjpjQlLk1QmZbTP4XZET/FX0c3TJ3K7qt4L98FS1Pifa8BVofTVuJFWVA==
+
+"@types/mocha@^5.2.7":
+  version "5.2.7"
+  resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-5.2.7.tgz#315d570ccb56c53452ff8638738df60726d5b6ea"
+  integrity sha512-NYrtPht0wGzhwe9+/idPaBB+TqkY9AhTvOLMkThm0IoEfLaiVQZwBwyJ5puCkO3AUCWrmcoePjp2mbFocKy4SQ==
+
 ansi-colors@3.2.3:
   version "3.2.3"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-3.2.3.tgz#57d35b8686e851e2cc04c403f1c00203976a1813"
