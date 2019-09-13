@@ -4,11 +4,12 @@ export enum PrimitiveType {
     String,
     Number,
     Boolean,
+    Null,
 }
 
 export interface PropertyDescriptor {
     readonly key: string
-    readonly type: PrimitiveType
+    readonly types: ReadonlyArray<PrimitiveType>
 }
 
 export interface TypeDefaultMap {
@@ -21,7 +22,7 @@ const generatePropertyAssignment = (key: string, value: any): PropertyAssignment
 
 export const generateDefaultObjectLiteralFromPropertyDescriptors = (propDescriptions: ReadonlyArray<PropertyDescriptor>, defaults: TypeDefaultMap): ObjectLiteralExpression => {
     const defaultAssignments = propDescriptions
-        .map(({key, type}) => ({ key, value: defaults[type] }))
+        .map(({key, types}) => ({ key, value: defaults[types[0]] }))
         .map(({key, value}) => generatePropertyAssignment(key, value))
 
     return ts.createObjectLiteral(defaultAssignments, true)

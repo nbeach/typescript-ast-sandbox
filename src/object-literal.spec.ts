@@ -11,9 +11,9 @@ describe(generateDefaultObjectLiteralFromPropertyDescriptors.name, () => {
 
     it("creates object literals from property descriptors and default values", () => {
         const propDescriptors: ReadonlyArray<PropertyDescriptor> = [
-            {key: "foo", type: PrimitiveType.String },
-            {key: "bar", type: PrimitiveType.Number },
-            {key: "baz", type: PrimitiveType.Boolean },
+            {key: "foo", types: [PrimitiveType.String] },
+            {key: "bar", types: [PrimitiveType.Number] },
+            {key: "baz", types: [PrimitiveType.Boolean] },
         ]
 
         const typeDefaultsMaps: TypeDefaultMap = {

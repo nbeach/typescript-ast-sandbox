@@ -12,6 +12,6 @@ export const readInterfaceProperties = (interfaceDeclaration: InterfaceDeclarati
         if (!ts.isPropertySignature(member)) { throw new Error("Expected a property signature") }
         if (!ts.isIdentifier(member.name)) { throw new Error("Expected an identifier") }
 
-        return { key: member.name.escapedText.toString(), type: kindToPrimitiveMap[member.type!.kind] }
+        return { key: member.name.escapedText.toString(), types: [kindToPrimitiveMap[member.type!.kind]] }
     })
 }
