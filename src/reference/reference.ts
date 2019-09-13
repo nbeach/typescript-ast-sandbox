@@ -11,8 +11,3 @@
 //     ],
 //
 // )
-
-
-// const filePath = "./src/test-interface.ts"
-// const program = ts.createProgram([filePath], {})
-// const source = program.getSourceFile(filePath)!

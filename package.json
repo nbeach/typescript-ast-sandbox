@@ -7,7 +7,8 @@
     "test:once": "mocha --opts mocha.opts",
     "lint": "tslint --project .",
     "lint:fix": "tslint --fix --project .",
-    "ci": "yarn lint && yarn test:once && yarn build"
+    "ci": "yarn lint && yarn test:once && yarn build",
+    "go": "ts-node ./src/reference/run.ts"
   },
   "devDependencies": {
     "@types/chai": "^4.2.2",
